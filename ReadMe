@@ -1,0 +1,37 @@
+1. Dataset Overview
+Features: Cell size, shape, texture, and density.
+
+Target: Diagnosis (Benign = 0, Malignant = 1).
+
+2. Data Preprocessing
+Splitting: 80% training, 20% testing.
+
+Scaling: Standardization (mean = 0, std = 1).
+
+Label Encoding: Converts diagnosis into numerical format.
+
+3. Neural Network Architecture
+Input Layer: ReLU activation, He Normal Initialization, L2 regularization.
+
+Hidden Layers: Dropout for overfitting prevention.
+
+Output Layer: Sigmoid activation for binary classification.
+
+4. Model Compilation
+Optimizer: Adam (adaptive learning rate).
+
+Loss Function: Binary Cross-Entropy.
+
+Evaluation Metric: Accuracy.
+
+5. Training Strategy
+Mini-batch gradient descent for weight updates.
+
+Validation on test set to monitor generalization.
+
+6. Model Evaluation
+High Accuracy (~95-99%) → Good performance.
+
+Overfitting → High train accuracy, low test accuracy.
+
+Underfitting → Low accuracy on both sets.
